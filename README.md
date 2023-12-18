@@ -3,7 +3,7 @@
 > * 支持添加多地址监听，每个地址可设置不同价格，比如A地址，2.0TRX，B地址，3.0TRX。在data.json配置即可。
 > * 如果只监听1个地址，把示例的第二个配置删掉即可，请注意检查json格式是否正确。
 
-1. 下载最新的压缩包，请按照对应的服务器架构下载，如果你服务器不是arm架构，你就下载默认x86即可，下载完成解压，目录下有3个文件，`monitor` 和  `config.yaml` 以及 `data.json`
+1. 下载最新的压缩包， 👉[Release](https://github.com/AE86X/Monitor/releases/)，请按照对应的服务器架构下载，如果你服务器不是arm架构，你就下载默认x86即可，下载完成解压，目录下有3个文件，`monitor` 和  `config.yaml` 以及 `data.json`
 2. `Monitor` 是程序的可执行文件，也就是主程序，运行的就是这个文件。
 3. `config.yaml` 是日志配置和波场官方API请求的ApiKey，日志配置不用动，波场的APIKEY，建议去 https://www.trongrid.io/ 注册，每天可请求10W次，不申请可能没影响，但是怕请求频繁，被波场官方限制（强烈建议申请）。
 4. `data.json` 是重点，可参考示例配置，key为你监听入账的地址，value 对应的是 **price**，是你需要设置的能量单价，设置 3TRX = 32000，就写3.0，**app_key**为你调用能量发送的APIKEY，提前去 https://t.me/XXTrxBot 申请，点击查看apikey复制即可。
